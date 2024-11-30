@@ -30,6 +30,11 @@ int main() {
             cout << "Result: " << result << endl;
             break;
         case '/':
+	    if(num2 == 0)
+	    {
+		    cerr << "Division by 0!\n";
+		    break;
+	    }
             result = num1 / num2;  // No check for dividing by 0
             cout << "Result: " << result << endl;
             break;
